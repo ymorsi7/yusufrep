@@ -1,0 +1,105 @@
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+ <meta name = "description" content = "Portfolio of Yusuf Morsi"/>
+<title> Yusuf Morsi | Projects </title>
+ <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/scroll-file.css">
+ <script src =“js/main.js”></script>
+ <script src =“js/scroll-file.js”></script>
+ <link rel="icon" href="../images/fc.png"> 
+</head>
+ 
+<body>
+ 
+ <header><h1>Yusuf Morsi's Portfolio</h1><nav>
+ <a href = "index.html">Home</a>
+ <a href = "/pages/projects.html">Projects</a>
+ <a href = "/pages/about.html">About</a>
+ <!-- <a href = "/pages/photos.html">Photography</a> -->
+ <!-- <a href = "/pages/contact.html">Contact</a> -->
+ </nav> <br> </header> 
+ 
+ 
+<section id = "Other">
+ <h5 id= "anchor3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JavaScript: Snake Game (Summer 2020) </h5>
+ <p>The goal of this game is to keep eating the red square without eating yourself. If the snake hits its own body, you start over. </p> 
+ <center><h14>Snake Game</h14></center><br><center>
+ <canvas id="gc" width="400" height="400"></canvas>
+ <script>
+ var arrow_keys_handler = function(e) {
+ switch(e.keyCode){
+ case 37: case 39: case 38: case 40: // Arrow keys
+ case 32: e.preventDefault(); break; // Space
+ default: break; // do not block other keys
+ }
+};
+window.addEventListener("keydown", arrow_keys_handler, false);
+ 
+ 
+ window.onload=function() {
+ canv=document.getElementById("gc");
+ ctx=canv.getContext("2d");
+ document.addEventListener("keydown",keyPush);
+ setInterval(game,1000/15);}
+ px=py=10;
+ gs=tc=20;
+ ax=ay=15;
+ xv=yv=0;
+ trail=[];
+ tail = 5;
+ function game() {
+ px+=xv;
+ py+=yv;
+ if(px<0) {
+ px= tc-1;}
+ if(px>tc-1) {
+ px= 0;}
+ if(py<0) {
+ py= tc-1;}
+ if(py>tc-1) {
+ py= 0;}
+
+ ctx.fillStyle="black";
+ ctx.fillRect(0,0,canv.width,canv.height);
+ 
+ ctx.fillStyle="navy";
+ for(var i=0;i<trail.length;i++) {
+ ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
+ if(trail[i].x==px && trail[i].y==py) {
+ tail = 5;}}
+ trail.push({x:px,y:py});
+ while(trail.length>tail) {
+ trail.shift();}
+ 
+ if(ax==px && ay==py) {
+ tail++;
+ ax=Math.floor(Math.random()*tc);
+ ay=Math.floor(Math.random()*tc);}
+ 
+ ctx.fillStyle="red";
+ ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);}
+ function keyPush(evt) {
+ switch(evt.keyCode) {
+ case 37:
+ xv=-1;yv=0;
+ break;
+ case 38:
+ xv=0;yv=-1;
+ break;
+ case 39:
+ xv=1;yv=0;
+ break;
+ case 40:
+ xv=0;yv=1;
+ break;}}</script></center><br>
+ 
+ <hr> <center>
+ <footer><hr><nav>
+ <a href = "/pages/index.html">Home</a>
+ <a href = "/pages/projects.html">Projects</a>
+ <a href = "/pages/about.html">About</a>
+ <!-- <a href = "/pages/photos.html">Photography</a> -->
+ <!-- <a href = "/pages/contact.html">Contact</a> -->
+ </nav> <br> </footer></center></section></body></html>
