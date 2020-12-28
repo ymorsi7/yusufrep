@@ -1,0 +1,438 @@
+header{
+	align-content: center;
+	text-align: center;
+}
+
+/* body{
+	border: solid thick black; */
+}
+
+footer{
+	font-size: 20px;
+	text-align: center;
+    padding: 15px; /* One of the 3 padding uses */
+}
+
+nav{
+    padding: 10px; /* One of the 3 padding uses */
+    font-family: "Copperplate";
+    font-size: 28px;
+}
+
+a{
+	 margin: 20px; 
+    color: black;
+    font-weight:900;
+}
+
+a.h14{
+    font-family: "Courier New";
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p{
+    margin: 20px; 
+    font-family: "Trebuchet MS";
+    padding-left: 10px; 
+}
+
+p.pj{
+    margin: 25px; 
+    font-family: "Trebuchet MS";
+    padding-left: 10px;
+    font-size: 20px; 
+    font-weight: 700;
+    color: navy;
+}
+
+p.pjj{
+    margin: 25px; 
+    font-family: "Trebuchet MS";
+    padding-left: 10px;
+    font-size: 20px; 
+    font-weight: 700;
+    color: black;
+}
+
+myP{
+    margin: 20px; 
+    font-family: "Trebuchet MS";
+    padding-left: 10px
+}
+
+pt{
+    margin: 20px; 
+    font-family: "Trebuchet MS";
+    font-size: 40;
+}
+
+
+/* Below are the 5 classes */
+
+h3.boldcblue{
+    font-family: "Lucida Sans Unicode";
+    color: navy;
+    font-weight:900;
+}
+
+p.blue{
+    margin: 20px; 
+    font-family: "Trebuchet MS";
+    color:blue;
+}
+
+div.img{
+    width:100%;
+    height:100%;
+    filter: blur(2px);
+}
+
+div.image{
+    width:10%;
+    height:20%;
+}
+
+a.anchor{
+    margin: 15px;
+    color: blue;
+    font-weight:2000;
+    font-family: "Lucida Sans Unicode";
+}
+
+a.blue{
+	margin: 20px; 
+    color: navy;
+    font-weight:900;
+}
+
+a.blackk{
+	margin: 20px; 
+    color: black;
+    font-weight:900;
+    font-family: "Trebuchet MS";
+    padding-left: 10px 
+}
+
+a.bluee{
+	margin: 20px; 
+    color: navy;
+    font-weight:900;
+    font-family: "Trebuchet MS";
+    padding-left: 10px 
+}
+
+/* Below are the 5 ids */
+
+#p {
+    color: navy;
+    font-weight:2000;
+}
+
+#bc {
+  font-size: 25px;
+}
+
+#cyantitle {
+ font-size: 17px;
+ font-weight: 900;
+ font-family: "arial";
+
+}
+
+#yantitle {
+    margin: 20px; /* One of the 3 margin uses */
+    font-family: "Trebuchet MS";
+    padding-left: 10px /* One of the 10 CSS Properties not discussed (5) */
+}
+
+
+#navytitle {
+ background-color: navy;
+ text-align: center;
+ padding-top: 10px /* One of the 10 CSS Properties not discussed (8) */
+}
+
+#aqtitle {
+    background-color: navy;
+    text-align: center;
+}
+
+/* animation */
+
+h1{
+/* animation-duration: 2s;
+  animation-name: slidein;   */
+  font-family: Copperplate;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h12{
+  animation-duration: 2s;
+  animation-name: slidein;
+  font-family: Copperplate;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4{
+  font-family: "Optima", "sans-serif";
+  font-size: 33px;
+  font-weight: 500;
+}
+
+h7{
+  font-family: "Optima", "sans-serif";
+  font-size: 75px;
+  font-weight: 900;
+}
+
+h9{
+    font-family: "Marker Felt", "fantasy";
+    color: limegreen;
+    font-size: 30px;}
+
+h14{
+    font-family: "Courier New";
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h11{
+    font-family: "Impact";
+    color: black;
+    font-size: 18px;}
+
+h8{
+  font-family: Impact;
+  font-size: 100px;
+  font-weight: 300;
+ 
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%; /* One of the 10 CSS Properties not discussed (2) */
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+h2{
+    font-family: "Lucida Sans Unicode";
+    color: black;
+}
+
+h5{
+  font-family: "Optima", "sans-serif";
+  font-size: 26px;
+  font-weight: 500;
+
+/* h5{
+    font-family: "Optima", "sans-serif";
+    color: navy;
+    font-size: 23px; */
+}
+
+h6{
+    font-family: "Impact";
+    color: navy;
+    font-size: 30px;
+}
+
+h3{
+    font-family: "Lucida Sans Unicode";
+    color: black;
+}
+
+
+
+/* a.anchor{
+    margin: 15px;
+    color: blue;
+    font-weight:2000;
+    font-family: "Lucida Sans Unicode";
+}
+*/
+section{
+    margin: 20px;
+}
+
+aside{
+    margin: 20px;
+}
+
+/* photo alignment */
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* This stuff is for centering text in images
+
+
+Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mystyle {
+  width: 300px;
+  height: 100px;
+  background-color: coral;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bbutton {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.sbutton {
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.rbutton {
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.gbutton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.spacefix{
+	margin: 20px; 
+    color: navy;
+    font-weight:900;
+    margin-left:-1px;
+    margin-right:-1px;
+}
+}
+
+.button1 {padding: 10px 24px;}
+.button2 {padding: 12px 28px;}
+.button3 {padding: 14px 40px;}
+.button4 {padding: 32px 16px;}
+.button5 {padding: 16px;}
+
